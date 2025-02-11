@@ -1,46 +1,4 @@
-// import { useState } from "react";
 
-// export default function Calculator() {
-//   const [input, setInput] = useState("");
-
-//   const handleClick = (value) => {
-//     setInput((prev) => prev + value);
-//   };
-
-//   const clearInput = () => {
-//     setInput("");
-//   };
-
-//   const calculateResult = () => {
-//     try {
-//       setInput(eval(input).toString());
-//     } catch {
-//       setInput("Error");
-//     }
-//   };
-
-//   return (
-//     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
-//       <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-80">
-//         <div className="mb-4 text-right p-4 bg-gray-700 rounded text-xl font-mono">{input || "0"}</div>
-//         <div className="grid grid-cols-4 gap-2">
-//           {["7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "0", ".", "=", "+"].map((char) => (
-//             <button 
-//               key={char} 
-//               onClick={() => (char === "=" ? calculateResult() : handleClick(char))} 
-//               className="bg-gray-600 hover:bg-gray-500 p-4 rounded text-xl"
-//             >
-//               {char}
-//             </button>
-//           ))}
-//           <button onClick={clearInput} className="col-span-4 bg-red-600 hover:bg-red-500 p-4 rounded text-xl">
-//             Clear
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 import { useState } from "react";
 
 export default function Calculator() {
